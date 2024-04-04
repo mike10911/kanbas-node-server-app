@@ -1,4 +1,4 @@
-import Hello from './hello.js'
+import Hello from './Hello.js'
 import Lab5 from './Lab5.js'
 import express from 'express'
 import cors from 'cors'

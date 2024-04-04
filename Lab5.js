@@ -15,6 +15,9 @@ const Lab5 = (app) => {
         course: "CS1000",
     };
 
+
+
+
     const todos = [
         { id: 1, title: "Task 1", completed: false, description: "This is task 1"},
         { id: 2, title: "Task 2", completed: true , description: "This is task 2"},
@@ -37,6 +40,12 @@ const Lab5 = (app) => {
         todo.title = title;
         res.json(todos);
     });
+
+     app.get("/qwe/:name", (req, res) => {
+        const name = req.params.name;
+        const greeting = "Hello " + name;
+        res.json(greeting);
+     })
 
     app.get("/a5/todos", (req, res) => {
         const { completed } = req.query;
